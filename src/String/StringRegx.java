@@ -16,6 +16,7 @@ public class StringRegx {
                 //character needs to be converted to String and then use string function matches
                 count ++;
                 System.out.println("count : "+count);
+                System.out.println("abc");
             }
         }
 
