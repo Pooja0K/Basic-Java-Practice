@@ -1,0 +1,22 @@
+List of Practise Programs
+1.Create a list ‘Address’ to add below items
+[ c, 1003, Wakad, Pune, 411057]
+2. Create a new list from above list ‘Address’. Add below data into new list
+[e,604,Costa Rica, Wakad,Pune,411057]
+New list should appear like [ c, 1003, Wakad, Pune, 411057 , e,604,Costa Rica, Wakad,Pune,411057]
+==================================================================================
+Array list = [ c, 1003, Wakad, Pune, 411057 , e,604,Costa Rica, Wakad,Pune,411057]
+3.Find out index of 411057 from above list
+4. Find out size of above array
+5.Add an element “Maharashtra” after every 411057
+6.Remove element from index 1
+7.Remove duplicate elements from above Arraylist
+8.WAP to search “Costa rica” from above list
+9. WAP to sort above array
+10. WAP to reverse elements of array
+List 1- {1,2,3,4,5}
+List 2-{2,5,1,7,4,9}
+11.WAP to Create a list with unique elements from list 1 and list 2 //[1,2,3,4,5,7,9]
+12.WAP to create a list with only common elements from both list // [1,2,4,5]
+
+//
