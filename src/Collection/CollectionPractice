@@ -1,0 +1,14 @@
+************Set Practise Programs
+Note: Please try to create methods for different operations. Don`t write everything in main method. Use main method only for method calling
+1.WAP to iterate elements of below HashSet and print same
+[“Apple”, “Banana”,”Grapes”,”Watermelon”,”Orange”]
+2.WAP to check if above set contains
+a.”Kiwi”
+b.”Watermelon”
+3.WAP to remove duplicate elements from below array
+[1,2,5,3,1,5,7,2]
+4.WAP to sort elements ( in descending order) from array
+[9,3,5,1,6,2,7]
+5. WAP to remove largest number from above array
+6. WAP to print duplicate elements from array
+[Happy Holi Everyone and Happy New Year Everyone]

@@ -1,0 +1,33 @@
+Collection
+*********************Set Concepts*******************************
+1. Set is an Interface
+2. HashSet, LinkedHashSet and TreeSet are three classes which implements Set interface
+
+**********************HashSet************************************
+3. HashSet Definition-->
+Duplicate values cannot be stored & insertion order is also not maintained in HashSet
+Rather elements are stored in HashSet based on hashcode or ascii value.
+Element having less hashcode/ascii value is stored first/before other element
+
+**********************LinkedHashSet******************************
+4. LinkedHashSet Definition-->
+LinkedHashSet is doubly LinkedHashSet(nodes)
+Duplicate values cannot be stored
+But insertion order is maintained in LinkedHashSet
+
+**********************TreeSet**************************************
+5. TreeSet Definition-->
+Duplicate values cannot be stored
+Insertion order is natural or Ascending order
+i.e. (that means elements are stored in natural/Ascending order not on insertion order)
+
+************************** TIME-COMPLEXITY****************************
+6. Time complexity(Important interview question)
+
+For
+
+
+
+
+
+

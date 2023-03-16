@@ -1,0 +1,97 @@
+Collection Topic
+**********************ITERABLE-INTERFACE***************************************************************************
+Iterable is interface
+
+**********************COLLECTION-INTERFACE**************************************************************************
+Collection is interface which implements Iterable interface
+
+*********************COLLECTION*************************************************************************************
+Collection can have heterogeneous and homogeneous data
+We don't need to give size while declaration
+We can dynamically increase the size of collection
+We can use multiple methods to perform operation on collection
+
+******************DRAWBACKS-OF-ARRAY********************************************************************************
+Array can store only homogeneous data type and we need to give size while declaration
+If we want to increase size of array later, we can't dynamically change the size of array
+If we have to change the size then we need to increase size where we have first declared the array in code
+operations on Array is limited and only few methods of Array and Object can we used yo perform operation on Array
+
+*******************LIST-QUEUE-SET*************************************************************************************
+List, Queue and Set is also interface and it implements Collection interface
+
+********************DIFFERENT-TYPES-OF-LIST****************************************************************************
+There are there types of List as below
+ArrayList, LinkedList & Vector and these are classes which implements List Interface
+
+********************LIST************************************************************************************************
+List Definition-->
+It maintains insertion order & stores duplicate values
+Initial/default size of Arraylist is 10 and when we add 11th element/value in arrayList
+size automatically/dynamically increases by size 10(10+10=20)
+********************GENERICS*********************************************************************************************
+Generics is mostly used to restrict type of elements in arraylist in order to make it homogeneous
+Note-If we don't know what type of elements/value needs to be stored in list we can use Object type Generics
+
+*********************WHICH-IS-BETTER-IN-TERMS-OF-PERFORMANCE-ARRAY-OR-COLLECTION?******************************************
+Which is better performance wise Array or Collection?
+Performance wise collection is better than array.
+
+********************LinkedList***********************************************************************************************
+LinkedList definition-->
+
+LinkedList is also known as doubly LinkedList
+Doubly LinkedList is kind of chain of nodes. Each node has 3 address.
+0th address of 1st node in doubly LinkedList has null values.
+At the Head/0th address of 2nd or other nodes,  address/position of preceding/previous node is stored.
+In 1st position/middle data is stored.
+At the end of node or tail of node or 2nd address, address of next node is stored.
+
+******************DIFFERENCE-BETWEEN-ARRAYLIST-AND-LINKED-LIST**************************************************************
+Difference between ArrayList and LinkedList
+
+1. Data is stored in form of array in Arraylist where as in LinkedList data is stored in form of doubly linked list
+2. Arraylist does not have methods like addFirst or addLast where as LinkedList have such methods
+3. ArrayList is implements List interface while LinkedList implements List and Deque
+4. Insertion and Deletion operation is fast in LinkedList but slow in ArrayList
+5. Search operation is fast in ArrayList but slow in LinkedList
+
+********************DIFFERENCE-BETWEEN-VECTOR-AND-ARRAYLIST**********************************************************************
+Difference between Vector and ArrayList
+
+1. Vector is synchronized but ArrayList is non synchronized
+2. Vector is slow but ArrayList is fast (because of synchronization)
+3. Security can be achieved using Vector however ArrayList is less secured
+
+*********************TIME-COMPLEXITY-DIFFERENCE-BETWEEN-OPERATIONS-IN-ARRAYLIST-AND-LINKED-LIST**********************************
+Time complexity difference of operations in ArrayList & LinkedList-->
+Insertion and Deletion operation has less time complexity in LinkedList BUT  more time taking in ArrayList
+Search operation has less time complexity in ArrayList but takes more time in LinkedList
+
+*********************************IMP INTERVIEW QUESTION***************
+1. How to convert array to ArrayList
+
+1A. First way is using Arrays.asList();
+Integer arr[]={1,2,3,4};
+
+List<Integer> ll= new ArrayList<Integer>(Arrays.asList(arr));
+
+1B Using For loop
+
+1C. Using Iterator
+
+**************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+

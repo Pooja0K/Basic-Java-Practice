@@ -1,0 +1,8 @@
+
+************************Iterator************************
+
+1. Iterator is an interface
+2.Iterator is used to iterate collection elements
+3.There are many methods in Iterator but 2 main methods that are mostly used is hasNext(), Next()
+4. hasNext() method checks if next element is present in collection or not and returns boolean value
+5. next() method returns next element from the collection
