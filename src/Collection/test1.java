@@ -1,8 +1,6 @@
 package Collection;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class test1 {
 
@@ -21,5 +19,7 @@ public class test1 {
 
     public static void main(String[] args) {
         ArrayList <String> address2 = new ArrayList<String>();
+
+
     }
 }

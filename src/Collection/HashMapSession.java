@@ -11,6 +11,7 @@ public class HashMapSession {
         map.put(2,"Rahul");
         map.put(3,"Ankita");
         map.put(4,"Anushka");
+        map.put(2,"Rahul");
         //map.put(null,null);
         //map.put(null,null);//null key value insertion is not allowed 2nd time
         System.out.println(map);

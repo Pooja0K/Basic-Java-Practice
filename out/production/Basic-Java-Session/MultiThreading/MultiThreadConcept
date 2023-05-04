@@ -1,0 +1,22 @@
+************************************MultiThread Purpose**************************************
+
+MultiThreading concept is used where we want to have independent process. For example in Bank for ATM
+withdrawal we should have independent method, when we withdraw money we should get withdrawal receipt,
+withdrawal message, account balance updated, updated account balance display.
+It should not be that one method/process is stuck for example, if withdrawal message not received then
+other method or process should not get stuck. So to have independent process we need to use multithreading concept
+where different threads are invoked for each method.
+
+MultiThread works on the principal of context switching for example,
+for sometime method send  withdrawal message will be invoked and start execution then context switches
+to another method let say account balance update (context switching is so fast that we cannot observe)
+then will switch back to another method so on
+
+**********************************How-to-achieve-Multithreading***************************************
+1. We should either extend our call with thread class or implement Runnable
+2. Override run method of Thread class or Runnable Interface
+3. Call start method which will internally call run method
+
+*****************************Challenges-with-MultiThreading*************************************************
+1. Code complexity(difficult to write & maintain code
+2. Execution order cannot be maintained

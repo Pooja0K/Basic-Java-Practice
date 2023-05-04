@@ -1,5 +1,6 @@
 package Collection;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListHetroSession {
     public static void main(String[] args) {
@@ -32,5 +33,7 @@ public class ArrayListHetroSession {
         ArrayList<Object> al2 = (ArrayList<Object>) al.clone();
         // need to understand this line typecast needed why?'
         System.out.println(al2);
+
+
     }
 }

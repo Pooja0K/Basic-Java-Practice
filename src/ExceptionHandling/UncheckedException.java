@@ -1,12 +1,13 @@
 package ExceptionHandling;
 
-public class ExceptionSession {
+public class UncheckedException {
 
     static void printValue(){
+
         try{
         int a=10;
         int b=0;
-        int c=(a/b);
+        int c=(a/b); //Risky code
         System.out.println(c); }
 
         catch (Exception e){
@@ -15,6 +16,8 @@ public class ExceptionSession {
     }
 
     public static void main(String[] args) {
-        ExceptionSession.printValue();
+
+        UncheckedException.printValue();
+
     }
 }

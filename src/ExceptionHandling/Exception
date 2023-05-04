@@ -1,0 +1,111 @@
+Exception->
+An unwanted or unexpected event that disturbs normal flow of program
+OR cause abnormal termination of program is called Exception.
+
+ ********************************************************************************************************
+ Purpose of exception handling->
+ Whenever exception occurs program terminates abnormally. Execution of remaining code,
+ after the line which caused exception wont happen. So in order to have graceful termination
+ of code so that we don't loose resources or block resources we need to handle exception in our program
+
+ ********************************************************************************************************
+ Exception Handling->
+ Defining an alternative way for execution of code/program, so that program executes normally
+ without abnormal termination is called exception handling
+
+ ***********************************************************************************************************
+ Default Exception Handling->
+ In program where exception is not handled in code, caller of the method or line which raises exception
+ creates exception object internally with help of JVM  and handover this exception object to JVM, JVM sends
+ it to Default Exception Handler which in turn prints the exception message(ExceptionName, Description & Stacktrace)
+ on console and terminates the program abnormally
+
+ **********************************************************************************************************
+Difference between Exception & Error->
+1. Exception is caused due to issue in code written by programmer hence we cant write try catch
+ to handle the code to correct it. So it is recoverable.
+
+But Error is caused due to lack of system resources (like virus attack, power shutdown, no power backup,
+memory full) So it is not recoverable.
+
+************************************************************************************************************
+Difference between Checked and Unchecked Exception->
+Exception which is checked by compiler for smooth execution of program is called checked exception.
+If any program can cause checked exception(e.g FileNotFoundException), when programmer writes risky
+code, compiler will throw exception at compile time itself and ask programmer to handle the risky code
+by throwing exception or adding try catch block around risky code. Throwable & Exception class are Partially
+checked exception and rest like IOException, SQLException, Interrupted Exception, Remote Exception etc are
+Fully checked exception
+
+
+While RuntimeException is not checked by compiler and we will get this only after we run the code.
+Here compilation of code is successful but during runtime we get exception. It is also called as Unchecked
+Exception.(Error and classes extending error, RuntimeException which is child of Exception class, throws
+unchecked exceptions.
+
+***********************************************************************************************************
+Risky code-->
+In program the line/line of code which causes exception to be raised is called Risky code.
+We need to place risky code in try catch block to prevent abnormal termination of program
+
+************************************************************************************************************
+Methods to Print Exception--> There are 3 methods & of them are present in Throwable class
+
+1. e.printStackTrace();
+This method prints NameOfException:DescriptionOfException & StackTrace.
+We don't System.out.println for above method because internally it contains System.out.println method.
+
+2. System.out.println(e)/System.out.println(e.toString());
+Both these method are same.This method prints NameOfException:DescriptionOfException
+This method returns string so we need to used it inside System.out.println
+
+3. System.out.println(e.getMessage());
+This method prints only DescriptionOfException and also it returns string.
+ So we need to used it inside System.out.println
+
+***************************************************************************************************************
+Multiple catch blocks-->
+In case multiple catch bloacks are there JVM will always consider catch block from Top to Bottom
+Order of catch block is very important in case of multiple catch block because
+(Parent Exception can handle Child Exception but Child Exception can't handle Parent Exception)
+
+***********************************************************************************************************
+What is the need of Finally Block-->
+In Program where we are using resources like database connection, Read data from file etc
+Once resource (database or file) is opened we also need to close the resource(connection/file)
+which is called cleanup activity/code.
+                                   In above case even if program terminates abnormally we need to close
+(database/file) resource so that resource is not lost or wasted. In this case finally is needed because
+finally block is always executed even in case of abnormal termination.
+
+************************************************************************************************************
+Finally-->
+1. Finally block will always get executed
+2. Even if return statement is present inside try catch finally block still finally block will get executed
+3.Finally block dominates return statement
+(If method has return statement then rest of code is not executed but finally block will get executed in case of return also)
+4. Only situation where finally block will not get executed is when we exit JVM using System.exit(0);
+System.exit(0);--> dominates/has highest priority then Finally
+
+Meaning of System.exit(0)- Normal Termination
+System.exit(1); Abnormal termination, it is used for logging purpose
+
+*********************************************************************************************************************
+Nested Try Catch & Finally-->
+1. Inside try block we can take try catch & finally
+2. Inside catch block we can take try catch & finally
+3. Inside finally block we can take try catch & finally
+4. Nesting of try catch & finally is possible
+5. Advantage of nested of try catch & finally-->
+Inside a try block we can take general/normal risky code
+And too much of risky code needs to be taken inside nested try catch block
+
+*********************************************************************************************************
+
+
+
+
+
+
+
+
